@@ -1,9 +1,10 @@
 import react from "react";
+import "../styles/Search.css";
 
 const Search = () => {
   return (
     <>
-      <input type="text"></input>
+      <input className="search-input" type="text"></input>
     </>
   );
 };
