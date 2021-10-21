@@ -1,7 +1,9 @@
 import "../styles/App.css";
 import Search from "./Search";
+import { useState } from "react";
 
 const App = () => {
+  const [searchResults, setSearchResults] = useState();
   return (
     <div className="App">
       <img
