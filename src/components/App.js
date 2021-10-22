@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState();
+
   return (
     <div className="App">
       <img
@@ -11,7 +12,7 @@ const App = () => {
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
         alt="Nasa Logo"
       ></img>
-      <Search />
+      <Search setSearchResults={setSearchResults} />
     </div>
   );
 };
