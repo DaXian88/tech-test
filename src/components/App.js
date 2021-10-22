@@ -1,6 +1,7 @@
 import "../styles/App.css";
 import Search from "./Search";
 import { useState } from "react";
+import SearchResults from "./SearchResults";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState();
@@ -13,6 +14,7 @@ const App = () => {
         alt="Nasa Logo"
       ></img>
       <Search setSearchResults={setSearchResults} />
+      <SearchResults />
     </div>
   );
 };
