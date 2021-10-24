@@ -4,8 +4,8 @@ import { useState } from "react";
 import SearchResults from "./SearchResults";
 
 const App = () => {
-  const [searchResults, setSearchResults] = useState();
-
+  const [searchResults, setSearchResults] = useState([]);
+  console.log(searchResults);
   return (
     <div className="App">
       <img
