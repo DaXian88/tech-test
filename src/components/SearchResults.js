@@ -2,17 +2,15 @@ import React from "react";
 import "../styles/SearchResults.css";
 
 const SearchResults = ({ searchResults }) => {
-  if (!searchResults.length) {
+  if (!searchResults) {
     return <p>No results found</p>;
   } else {
     return (
       <>
         <p>Search Results</p>
-        <img
-          className="search-image"
-          src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-          alt="Moon Pic"
-        />
+        {searchResults.map((result) => (
+          <img className="search-image" src={result} alt="Space Pic" />
+        ))}
       </>
     );
   }
