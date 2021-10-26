@@ -2,3 +2,15 @@
   display: flex;
   justify-content: center;
 }
+
+img {
+  height: 30rem;
+  width: auto;
+}
+.image-container {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-direction: column;
+}
