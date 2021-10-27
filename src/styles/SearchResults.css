@@ -1,15 +1,11 @@
+.search-results {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+}
 .search-image {
   padding: 30px;
-  margin: 10px;
-}
-
-img {
-  height: 30rem;
-  width: auto;
-}
-.image-container {
-  display: flex;
-  align-content: space-around;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 33%;
 }

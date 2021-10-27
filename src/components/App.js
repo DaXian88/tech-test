@@ -2,6 +2,7 @@ import "../styles/App.css";
 import Search from "./Search";
 import { useState } from "react";
 import SearchResults from "./SearchResults";
+import PropTypes from "prop-types";
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -18,5 +19,9 @@ const App = () => {
     </div>
   );
 };
+
+// App.propTypes = {
+
+// }
 
 export default App;

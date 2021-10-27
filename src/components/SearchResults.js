@@ -6,8 +6,7 @@ const SearchResults = ({ searchResults }) => {
     return <p>No results found</p>;
   } else {
     return (
-      <div className="image-container">
-        <p>Search Results</p>
+      <div className="search-results">
         {searchResults.map((result) => (
           <img className="search-image" src={result} alt="Space Pic" />
         ))}
