@@ -1,11 +1,11 @@
 .search-results {
-  display: grid;
   align-content: space-around;
   justify-content: center;
   flex-direction: row;
 }
 .search-image {
-  padding: 30px;
-  margin: 0 auto;
-  max-width: 33%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
 }
